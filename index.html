@@ -36,45 +36,20 @@
         </div>
         <div class="grupo">
           <label for="peso">Digite seu peso</label>
-          <input type="text" placeholder="Ex: 70.2">
+          <input type="text" placeholder="Ex: 70.2" id="peso" required />
         </div>
         <div class="grupo">
           <label for="altura">Digite sua altura</label>
-          <input onchange="imc()" type="text" placeholder="Ex: 1.7">
+          <input onchange="imc()" type="text" placeholder="Ex: 1.7"  id="altura" required />
         </div>
       </form>
       <section>
         <div class="table-imc">
-          <div class="imc-result">
-            resultado
+          <div class="imc-result" id="imc_result">
+            <p id="resultIMC"></p>
           </div>
           <div class="imc-table">
-            <table>
-              <tr>
-                <th>Valores</th>
-                <th>Situação</th>
-              </tr>
-              <tr>
-                <td>Abaixo de 18.5</td>
-                <td>Magro (Abaixo do Peso)</td>
-              </tr>
-              <tr>
-                <td>Entre 18.5 e 24.9</td>
-                <td>Peso Normal</td>
-              </tr>
-              <tr>
-                <td>Entre 25.0 e 29.9</td>
-                <td>Sobrepeso</td>
-              </tr>
-              <tr>
-                <td>Entre 30 e 39.9</td>
-                <td>Obesidade</td>
-              </tr>
-              <tr>
-                <td>Acima de 40</td>
-                <td>Obesidade Grave</td>
-              </tr>
-            </table>
+
           </div>
         </div>
       </section>
