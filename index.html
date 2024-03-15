@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo Calorias</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/fc1d6ae1da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Calculando as calorias diárias</h1>
+    </header>
+    <main>
+      <form class="form" id="formId">
+        <div class="grupo">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="grupo">
+          <label for="dtNas">Data de Nascimento</label>
+          <input type="date" id="dtNas" required />
+        </div>
+        <div class="gender">
+          <input type="radio" id="masc" name="genero" value="Masculino">
+          <label for="masc">Masculino</label>
+        </div>
+        <div class="gender">
+          <input type="radio" id="femin" name="genero" value="Feminino">
+          <label for="femin">Feminino</label>
+        </div>
+        <div class="grupo">
+          <label for="peso">Digite seu peso</label>
+          <input type="text" placeholder="Ex: 70.2">
+        </div>
+        <div class="grupo">
+          <label for="altura">Digite sua altura</label>
+          <input onchange="imc()" type="text" placeholder="Ex: 1.7">
+        </div>
+      </form>
+      <section>
+        <div class="table-imc">
+          <div class="imc-result">
+            resultado
+          </div>
+          <div class="imc-table">
+            <table>
+              <tr>
+                <th>Valores</th>
+                <th>Situação</th>
+              </tr>
+              <tr>
+                <td>Abaixo de 18.5</td>
+                <td>Magro (Abaixo do Peso)</td>
+              </tr>
+              <tr>
+                <td>Entre 18.5 e 24.9</td>
+                <td>Peso Normal</td>
+              </tr>
+              <tr>
+                <td>Entre 25.0 e 29.9</td>
+                <td>Sobrepeso</td>
+              </tr>
+              <tr>
+                <td>Entre 30 e 39.9</td>
+                <td>Obesidade</td>
+              </tr>
+              <tr>
+                <td>Acima de 40</td>
+                <td>Obesidade Grave</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

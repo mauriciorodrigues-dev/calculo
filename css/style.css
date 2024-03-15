@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  display: grid;
+  place-content: center;
+  height: 10vh;
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  place-content: center;
+}
+
+.form {
+  width: 80rem;
+  border: 0.1rem solid #ccc;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 1rem #ccc;
+  display: grid;
+  gap: 1rem;
+}
+
+.form .grupo {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  margin-top: .2rem;
+  outline: none;
+  border: 0.1rem solid #ccc;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #ccc;
+}
+input:focus {
+  border: 0.3rem solid rgb(0, 153, 255);
+}
+
+.gender{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.gender input{
+  margin-right: 1rem;
+}
+
+.table-imc{
+  display: flex;
+  margin-top: 1rem;
+}
+
+.imc-result{
+  flex: 1;
+}
+.imc-table{
+  flex: 1;
+}
+
+table{
+  width: 100%;
+}
+
+table, th, td{
+  border-collapse: collapse;
+  border: .1rem solid #ccc;
+  padding: .6rem;
+  text-align: center;
+}
